@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void zeroOne(int arr[10][10], int n)
+void zeroOne(int n,int arr[n][n])
 {
   for(int i=0; i<n ; i++)
   {
@@ -15,7 +15,7 @@ void zeroOne(int arr[10][10], int n)
   }
 }
 
-void display(int arr[10][10], int n)
+void display(int n,int arr[n][n])
 {
   for(int i=0; i<n ; i++)
   {
@@ -32,6 +32,6 @@ int main()
   scanf("%d",&n);
   
   int a[n][n];
-  zeroOne(a,n);
-  display(a,n);
+  zeroOne(n,a);
+  display(n,a);
 }
