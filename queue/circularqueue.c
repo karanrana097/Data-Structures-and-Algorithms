@@ -13,13 +13,13 @@ void enqueue(int element)
         rear=0;  
         queue[rear]=element;  
     }  
-    else if((rear+1)%max==front) //3%3=0 == 2
+    else if((rear+1)%max==front)
     {  
         printf("Queue is overflow..");  
     }  
     else  
     {  
-        rear=(rear+1)%max;  // (3)%3 =0
+        rear=(rear+1)%max; 
         queue[rear]=element;    
     }  
 }
